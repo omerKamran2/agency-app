@@ -8,7 +8,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-          Engineering Software for Your Business’s Future
+          Building Software for Your Business's Future
           </Heading>
           <Text as="p" variant="heroSecondary">
           We deliver reliable, tailored software that solves your business challenges and drives results,
