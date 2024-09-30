@@ -10,34 +10,34 @@ const data = [
   {
     id: 1,
     imgSrc: Performance,
-    altText: 'Fast Performance',
-    title: 'Fast Performance',
+    altText: 'High Performance',
+    title: 'High Performance',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Our software solutions are designed to optimize performance, ensuring fast and efficient operations that scale with your business needs.',
   },
   {
     id: 2,
     imgSrc: Partnership,
-    altText: 'Partnership deal',
-    title: 'Partnership deal',
+    altText: 'Strategic Partnerships',
+    title: 'Strategic Partnerships',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We collaborate with your team to understand your goals and deliver custom solutions that drive long-term success.',
   },
   {
     id: 3,
     imgSrc: Subscription,
-    altText: 'Pro Subscription',
-    title: 'Pro Subscription',
+    altText: 'Flexible Solutions',
+    title: 'Flexible Solutions',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Tailor-made software services, with options to scale or customize features, ensuring that your system grows with you.',
   },
   {
     id: 4,
     imgSrc: Support,
-    altText: 'Customer Support',
-    title: 'Customer Support',
+    altText: 'Reliable Support',
+    title: 'Reliable Support',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Our team is here to assist with any technical challenges or updates, ensuring your software remains dependable and optimized for your business needs.',
   },
 ];
 
@@ -46,8 +46,8 @@ export default function KeyFeature() {
     <Box sx={{ variant: 'section.keyFeature' }} id="feature">
       <Container>
         <SectionHeader
-          slogan="Whats the function"
-          title="Meet the feature of product"
+          slogan="Why Us"
+          title="Key Benefits of Our Services"
         />
 
         <Grid sx={styles.grid}>
