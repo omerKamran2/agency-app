@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Container,
   Box,
@@ -7,7 +7,7 @@ import {
   Heading
 } from 'theme-ui';
 import Image from 'next/image';
-import { keyframes } from '@emotion/react'
+// import { keyframes } from '@emotion/react'
 import TextFeature from 'components/text-feature';
 
 import ServiceThumb from '../assets/service-thumb.png';
@@ -18,23 +18,39 @@ import Secure from '../assets/services/secure.svg';
 
 const data = {
   subTitle: 'our services',
-  title: 'Business Goals Achieved with Design',
+  title: 'Driving Success Through Technology',
   features: [
     {
       id: 1,
       imgSrc: Smart,
-      altText: 'Smart Features',
-      title: 'Smart Features',
+      altText: 'FullStack Development',
+      title: 'FullStack Development',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'From concept to deployment, we build robust, scalable web and mobile applications that meet your business needs with seamless integration and modern design.',
     },
     {
       id: 2,
       imgSrc: Secure,
-      altText: 'Secure Contents',
-      title: 'Secure Contents',
+      altText: 'Cloud Services',
+      title: 'Cloud Services',
       text:
-        'Get your blood tests delivered at let home collect sample from the victory of the managements. your blood tests.',
+        'Optimize your cloud infrastructure with our scalable, secure, and cost-effective DevOps services, offering expertise in cloud migration, deployment, automation, and management across AWS, Google Cloud, and Azure to ensure seamless operations and efficient scaling.',
+    },
+    {
+      id: 3,
+      imgSrc: Secure,
+      altText: 'AI, ML, LLMs & Chatbots Development',
+      title: 'AI, ML, LLMs & Chatbots Development',
+      text:
+        'Leverage the power of Artificial Intelligence and Machine Learning with tailored solutions, including the development of large language models (LLMs) and intelligent chatbots to enhance user interaction and business automation.',
+    },
+    {
+      id: 4,
+      imgSrc: Secure,
+      altText: 'Technical Documentation',
+      title: 'Technical Documentation',
+      text:
+        'Our team excels in delivering clear, accurate, and engaging technical content tailored to your needs. We provide a range of services, including comprehensive documentation, insightful blog writing, in-depth whitepapers, user manuals, API guides, and case studies.',
     },
   ],
 };
