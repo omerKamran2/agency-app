@@ -75,11 +75,11 @@ export default function Subscribe() {
         <Box sx={styles.contentBox}>
           <Box sx={styles.contentBoxInner}>
             <Heading as="h2" sx={styles.title}>
-              Subscribe to our Blog
+            Stay Updated with the Latest in Software Development
             </Heading>
             <Text as="p" sx={styles.description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elitsed eiusmod
-              tempor incididunt labore dolore.
+            Join our newsletter for insights on the latest trends in AI, ML, Web & Mobile Development, and more.
+            Stay ahead with tips, case studies, and updates from our expert team.
             </Text>
             <form onSubmit={subscribe}>
               <Flex sx={styles.subscribeForm}>
