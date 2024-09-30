@@ -41,7 +41,7 @@ const data = {
 
 export default function ServiceSection() {
   return (
-    <Box sx={{ variant: 'section.services' }}>
+    <Box id='services' sx={{ variant: 'section.services' }}>
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
