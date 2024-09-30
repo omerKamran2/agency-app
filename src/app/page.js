@@ -12,7 +12,7 @@ import WorkFlow from 'sections/workflow';
 // import Package from 'sections/package';
 import TeamSection from 'sections/team-section';
 import TestimonialCard from 'sections/testimonial';
-import BlogSection from 'sections/blog-section';
+// import BlogSection from 'sections/blog-section';
 import Subscribe from 'sections/subscribe';
 
 export default function Home() {
@@ -29,7 +29,7 @@ export default function Home() {
           {/* <Package/> */}
           <TeamSection/>
           <TestimonialCard/>
-          <BlogSection/>
+          {/* <BlogSection/> */}
           <Subscribe/>
         </Layout>
       </StickyProvider>
