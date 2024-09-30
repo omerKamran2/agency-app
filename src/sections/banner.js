@@ -8,14 +8,13 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            Top Quality Digital Products To Explore
+          Engineering Software for Your Business’s Future
           </Heading>
           <Text as="p" variant="heroSecondary">
-            Get your blood tests delivered at let home collect sample from the
-            victory of the managements that supplies best design system
-            guidelines ever.
+          We deliver reliable, tailored software that solves your business challenges and drives results,
+          using the latest technologies and expert development teams.
           </Text>
-          <Button variant="primary">Explore</Button>
+          <Button variant="primary">Let’s Collaborate</Button>
         </Box>
 
         <Box sx={styles.banner.imageBox}>
