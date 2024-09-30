@@ -7,27 +7,27 @@ import ArrowEven from 'assets/arrowEven.svg';
 const data = [
   {
     id: 1,
-    title: 'Set disbursement Instructions',
+    title: 'Discovery & Planning',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We start by understanding your business needs and project goals, ensuring we’re aligned from the start. Together, we’ll define the scope and strategy for your custom solution.',
   },
   {
     id: 2,
-    title: 'Assembly retrieves funds from your account',
+    title: 'Design & Development',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Our expert team gets to work designing and developing a solution tailored to your requirements, using the latest technologies and best practices to ensure top-quality results.',
   },
   {
     id: 3,
-    title: 'Assembly initiates disbursement',
+    title: 'Testing & Quality Assurance',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'We rigorously test your software to ensure it meets all your business needs, is free from bugs, and performs optimally under various conditions.',
   },
   {
     id: 4,
-    title: 'Customer receives funds payment',
+    title: 'Launch & Support',
     text:
-      'Get your blood tests delivered at home collect a sample from the your blood tests.',
+      'Once the solution is ready, we assist with deployment and ensure a smooth launch. We also provide support to resolve any post-launch issues and help you scale as needed.',
   },
 ];
 
