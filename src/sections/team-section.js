@@ -177,7 +177,7 @@ const data = [
 
 export default function TeamSection() {
   return (
-    <Box>
+    <Box sx={{marginTop: '5%'}}>
       <Container>
         <SectionHeader
           slogan="our team"
