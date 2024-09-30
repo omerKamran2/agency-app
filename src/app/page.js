@@ -6,13 +6,13 @@ import Banner from 'sections/banner';
 import Layout from 'components/layout';
 import KeyFeature from 'sections/key-feature';
 import ServiceSection from 'sections/service-section';
-import Feature from 'sections/feature';
-import CoreFeature from 'sections/core-feature';
+// import Feature from 'sections/feature';
+// import CoreFeature from 'sections/core-feature';
 import WorkFlow from 'sections/workflow';
-import Package from 'sections/package';
+// import Package from 'sections/package';
 import TeamSection from 'sections/team-section';
 import TestimonialCard from 'sections/testimonial';
-import BlogSection from 'sections/blog-section';
+// import BlogSection from 'sections/blog-section';
 import Subscribe from 'sections/subscribe';
 
 export default function Home() {
@@ -23,13 +23,13 @@ export default function Home() {
           <Banner/>
           <KeyFeature />
           <ServiceSection />
-          <Feature/>
-          <CoreFeature/>
+          {/* <Feature/> */}
+          {/* <CoreFeature/> */}
           <WorkFlow/>
-          <Package/>
+          {/* <Package/> */}
           <TeamSection/>
           <TestimonialCard/>
-          <BlogSection/>
+          {/* <BlogSection/> */}
           <Subscribe/>
         </Layout>
       </StickyProvider>
