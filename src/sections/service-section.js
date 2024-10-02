@@ -114,10 +114,18 @@ const styles = {
       width: '100%',
     },
   },
-  shapeBox: {
+  shapeBoxLeft: {
     position: 'absolute',
     bottom: -68,
     left: -160,
+    zIndex: -1,
+    display: ['none', null, null, null, null, 'inline-block'],
+  },
+
+  shapeBoxRight: {
+    position: 'absolute',
+    bottom: -68,
+    left: 400,
     zIndex: -1,
     display: ['none', null, null, null, null, 'inline-block'],
   },
