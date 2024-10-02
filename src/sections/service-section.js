@@ -9,9 +9,11 @@ import {
 import Image from 'next/image';
 // import { keyframes } from '@emotion/react'
 import TextFeature from 'components/text-feature';
+import SectionHeader from 'components/section-header';
 
 import ServiceThumb from '../assets/service-thumb.png';
 import shapePattern from '../assets/shape-pattern1.png';
+import shapePatternTwo from '../assets/shape-pattern2.png';
 
 import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
