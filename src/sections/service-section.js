@@ -9,9 +9,11 @@ import {
 import Image from 'next/image';
 // import { keyframes } from '@emotion/react'
 import TextFeature from 'components/text-feature';
+import SectionHeader from 'components/section-header';
 
 import ServiceThumb from '../assets/service-thumb.png';
 import shapePattern from '../assets/shape-pattern1.png';
+import shapePatternTwo from '../assets/shape-pattern2.png';
 
 import Smart from '../assets/services/smart.svg';
 import Secure from '../assets/services/secure.svg';
@@ -58,30 +60,105 @@ const data = {
 export default function ServiceSection() {
   return (
     <Box id='services' sx={{ variant: 'section.services' }}>
+      <SectionHeader
+          slogan="Why Us"
+          title="Key Benefits of Our Services"
+      />
+
+      {/* Full stack dev */}
       <Container sx={styles.containerBox}>
         <Box sx={styles.thumbnail}>
           <Image src={ServiceThumb} alt="Thumbnail" />
-          <Box sx={styles.shapeBox}>
+          <Box sx={styles.shapeBoxLeft}>
             <Image src={shapePattern} alt="Shape" />
           </Box>
         </Box>
         <Box sx={styles.contentBox}>
-          <TextFeature subTitle={data.subTitle} title={data.title} />
-
           <Grid sx={styles.grid}>
-            {data.features.map((item) => (
-              <Box sx={styles.card} key={item.id}>
-                <Image src={item.imgSrc} alt={item.altText} style={styles.icon} />
+            <Box sx={styles.card} key={data.features[0].id}>
+              <Image src={data.features[0].imgSrc} alt={data.features[0].altText} style={styles.icon}/>
 
-                <Box sx={styles.wrapper}>
-                  <Heading sx={styles.wrapper.title}>{item.title}</Heading>
-                  <Text sx={styles.wrapper.subTitle}>{item.text}</Text>
-                </Box>
+              <Box sx={styles.wrapper}>
+                <Heading sx={styles.wrapper.title}>{data.features[0].title}</Heading>
+                <Text sx={styles.wrapper.subTitle}>{data.features[0].text}</Text>
               </Box>
-            ))}
+            </Box>
           </Grid>
         </Box>
       </Container>
+
+
+      {/* Cloud services */}
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.contentBox}>
+          <Grid sx={styles.grid}>
+            <Box sx={styles.card} key={data.features[1].id}>
+              <Image src={data.features[1].imgSrc} alt={data.features[1].altText} style={styles.icon}/>
+
+              <Box sx={styles.wrapper}>
+                <Heading sx={styles.wrapper.title}>{data.features[1].title}</Heading>
+                <Text sx={styles.wrapper.subTitle}>{data.features[1].text}</Text>
+              </Box>
+            </Box>
+          </Grid>
+        </Box>
+        <Box sx={styles.thumbnail}>
+          <Image src={ServiceThumb} alt="Thumbnail"/>
+          <Box sx={styles.shapeBoxRight}>
+            <Image src={shapePatternTwo} alt="Shape"/>
+          </Box>
+        </Box>
+      </Container>
+
+      {/* AI/ML */}
+      <Container sx={styles.containerBox}>
+      <Box sx={styles.thumbnail}>
+          <Image src={ServiceThumb} alt="Thumbnail"/>
+          <Box sx={styles.shapeBoxLeft}>
+            <Image src={shapePatternTwo} alt="Shape"/>
+          </Box>
+        </Box>
+        <Box sx={styles.contentBox}>
+          <Grid sx={styles.grid}>
+            <Box sx={styles.card} key={data.features[2].id}>
+              <Image src={data.features[2].imgSrc} alt={data.features[2].altText} style={styles.icon}/>
+
+              <Box sx={styles.wrapper}>
+                <Heading sx={styles.wrapper.title}>{data.features[2].title}</Heading>
+                <Text sx={styles.wrapper.subTitle}>{data.features[2].text}</Text>
+              </Box>
+            </Box>
+          </Grid>
+        </Box>
+      </Container>
+
+
+      {/* Tech Docs */}
+      <Container sx={styles.containerBox}>
+        <Box sx={styles.contentBox}>
+          <Grid sx={styles.grid}>
+            <Box sx={styles.card} key={data.features[3].id}>
+              <Image src={data.features[3].imgSrc} alt={data.features[3].altText} style={styles.icon}/>
+
+              <Box sx={styles.wrapper}>
+                <Heading sx={styles.wrapper.title}>{data.features[3].title}</Heading>
+                <Text sx={styles.wrapper.subTitle}>{data.features[3].text}</Text>
+              </Box>
+            </Box>
+          </Grid>
+        </Box>
+        <Box sx={styles.thumbnail}>
+          <Image src={ServiceThumb} alt="Thumbnail"/>
+          <Box sx={styles.shapeBoxRight}>
+            <Image src={shapePattern} alt="Shape"/>
+          </Box>
+        </Box>
+      </Container>
+
+
+
+
+
     </Box>
   );
 }
@@ -112,10 +189,18 @@ const styles = {
       width: '100%',
     },
   },
-  shapeBox: {
+  shapeBoxLeft: {
     position: 'absolute',
     bottom: -68,
     left: -160,
+    zIndex: -1,
+    display: ['none', null, null, null, null, 'inline-block'],
+  },
+
+  shapeBoxRight: {
+    position: 'absolute',
+    bottom: -68,
+    left: 400,
     zIndex: -1,
     display: ['none', null, null, null, null, 'inline-block'],
   },
